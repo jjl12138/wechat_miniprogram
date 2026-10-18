@@ -1,0 +1,47 @@
+.container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.classic-img{
+  width:422rpx;
+  height:422rpx;
+  margin-top: 60rpx;
+  border-radius: 50%;
+}
+
+.player-img{
+  width: 120rpx;
+  height: 120rpx;
+  position:relative;
+  bottom: 270rpx;
+}
+
+.tag{
+  width:44rpx;
+  height:128rpx;
+  position: relative;
+  right:310rpx;
+  bottom:160rpx;
+}
+
+.rotation {
+  -webkit-transform: rotate(360deg); /* 兼容旧版Webkit浏览器，初始旋转360度（可省略） */
+  animation: rotation 12s linear infinite; /* 标准写法：应用名为rotation的动画，12秒一圈，匀速，无限循环 */
+  -moz-animation: rotation 12s linear infinite; /* 兼容Firefox：应用rotation动画 */
+  -webkit-animation: rotation 12s linear infinite; /* 兼容Webkit浏览器：应用rotation动画 */
+  -o-animation: rotation 12s linear infinite; /* 兼容Opera：应用rotation动画 */
+}
+
+@-webkit-keyframes rotation { /* Webkit浏览器下定义名为rotation的关键帧动画 */
+  from {
+    -webkit-transform: rotate(0deg); /* 动画起始时，旋转角度为0度 */
+  }
+
+  to {
+    -webkit-transform: rotate(360deg); /* 动画结束时，旋转角度为360度 */
+  }
+}
+
+

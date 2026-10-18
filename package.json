@@ -1,0 +1,16 @@
+{
+  "name": "miniprogram-island",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "js-base64": "^3.7.8",
+    "lin-ui": "^0.9.13"
+  }
+}
