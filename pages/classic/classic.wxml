@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="header">
+    <v-episode class="episode" index="{{classicData.index}}"></v-episode>
+    <view class="like-container">
+      <v-like class="like" bind:like="onLike" like="{{likeStatus}}" count="{{likeCount}}">
+      </v-like>
+      <v-button class="share-btn" open-type="share">
+        <image class="share" slot="img" src="/images/icon/share.png" />
+      </v-button>
+    </view>
+  </view>
+  <text></text>
+  <v-movie hidden="{{classicData.type!=100}}" img="{{classicData.image}}" content="{{classicData.content}}"></v-movie>
+  <v-music wx:if="{{classicData.type==200}}" img="{{classicData.image}}" content="{{classicData.content}}" title="{{classicData.title}}" src="{{classicData.url}}"></v-music>
+  <!-- <v-music hidden="{{classicData.type!=200}}" img="{{classicData.image}}" content="{{classicData.content}}" title="{{classicData.title}}" src="{{classicData.url}}"></v-music> -->
+  <v-essay hidden="{{classicData.type!=300}}" img="{{classicData.image}}" content="{{classicData.content}}"></v-essay>
+
+  <v-navi class="navi" bind:left="onNext" bind:right="onPrevious" title="{{classicData.title}}" first="{{first}}" latest="{{latest}}" />
+</view>
